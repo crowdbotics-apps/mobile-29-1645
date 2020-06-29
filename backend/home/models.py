@@ -10,6 +10,7 @@ class CustomText(models.Model):
     title = models.CharField(max_length=150,)
     bigInteger = models.BigIntegerField(null=True, blank=True,)
     binaryfield = models.BinaryField(null=True, blank=True,)
+    boolean = models.BooleanField(null=True, blank=True,)
 
     def __str__(self):
         return self.title
