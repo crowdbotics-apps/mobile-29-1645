@@ -12,6 +12,7 @@ class CustomText(models.Model):
     binaryfield = models.BinaryField(null=True, blank=True,)
     boolean = models.BooleanField(null=True, blank=True,)
     char = models.CharField(max_length=256, null=True, blank=True,)
+    date = models.DateField(null=True, blank=True,)
 
     def __str__(self):
         return self.title
